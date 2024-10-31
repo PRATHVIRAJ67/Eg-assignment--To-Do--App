@@ -28,11 +28,7 @@ The application is hosted and can be accessed here: [To-Do List App Demo]()
 - **Animations**: Added smooth animations for adding, deleting, and completing tasks to enhance user experience.
 - **Task Counter**: Display the total number of tasks, including those that are completed.
 
-## Project Structure
 
-- **components/**: Contains reusable React components for the To-Do List (e.g., TaskItem, InputField).
-- **App.js**: The main application logic and component structure.
-- **styles.css**: Custom styling for the application.
 
 ## How to Run the Project
 
