@@ -6,7 +6,8 @@ This is a responsive and user-friendly To-Do List application built with React. 
 
 ## Hosted Link
 
-The application is hosted and can be accessed here: [https://eg-assignment-to-do-app-6a7a.vercel.app/]()
+The application is hosted and can be accessed here:[https://eg-assignment-to-do-app-6a7a.vercel.app](https://eg-assignment-to-do-app-6a7a.vercel.app)
+
 
 ## Features Implemented
 
