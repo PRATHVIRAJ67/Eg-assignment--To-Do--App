@@ -33,7 +33,6 @@ function App() {
         newTasks.splice(index, 1);
         setTasks(newTasks);
     };
-
     
     const editTask = (index) => {
         const newTasks = [...tasks];
@@ -43,13 +42,11 @@ function App() {
         setTasks(newTasks);
     };
 
-    
     const toggleCompletion = (index) => {
         const newTasks = [...tasks];
         newTasks[index].completed = !newTasks[index].completed;
         setTasks(newTasks);
     };
-
     
     const clearAllTasks = (e) => {
         e.preventDefault();
@@ -68,7 +65,7 @@ function App() {
                     placeholder="Add new list item"
                     value={taskInput}
                     onChange={(e) => setTaskInput(e.target.value)}
-                    onKeyPress={(e) => {
+                    onKeyUp={(e) => {
                         if (e.key === 'Enter') addTask();
                     }}
                 />

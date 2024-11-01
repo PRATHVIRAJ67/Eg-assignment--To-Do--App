@@ -2,11 +2,11 @@
 
 ![To-Do List Application Screenshot](./eg%20to%20do%20app.png)
 
-This is a simple To-Do List application built using **React**. The app is designed as a part of a skills assessment for the Frontend Developer - Intern position at **EG India**.
+This is a responsive and user-friendly To-Do List application built with React. It allows users to add, manage, and track their tasks efficiently. Key features include adding new tasks, marking tasks as complete, sorting and filtering tasks, and clearing completed tasks. The app uses local storage to ensure tasks persist across sessions, providing a smooth and consistent user experience.
 
 ## Hosted Link
 
-The application is hosted and can be accessed here: [To-Do List App Demo]()
+The application is hosted and can be accessed here: [https://eg-assignment-to-do-app-6a7a.vercel.app/]()
 
 ## Features Implemented
 
@@ -34,7 +34,7 @@ The application is hosted and can be accessed here: [To-Do List App Demo]()
 
 1. **Clone the Repository**:
    ```sh
-   git clone <repository-url>
+   git clone <https://github.com/PRATHVIRAJ67/Eg-assignment--To-Do--App.git>
    ```
 
 2. **Navigate to the Project Directory**:
