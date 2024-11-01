@@ -5,18 +5,18 @@ function App() {
     
     const [taskInput, setTaskInput] = useState('');
     const [tasks, setTasks] = useState([]);
-
+    //This is used to load Task from local storage when app loads
     useEffect(() => {
         const storedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
         setTasks(storedTasks);
     }, []);
 
-   
+   //saving task whenever they change it save our task to local storage
     useEffect(() => {
         localStorage.setItem('tasks', JSON.stringify(tasks));
     }, [tasks]);
 
-    
+    // adding the task 
     const addTask = () => {
         const taskText = taskInput.trim();
         if (taskText === '') {
@@ -27,13 +27,13 @@ function App() {
         setTaskInput('');
     };
 
-   
+   // deleting  the task
     const deleteTask = (index) => {
         const newTasks = [...tasks];
         newTasks.splice(index, 1);
         setTasks(newTasks);
     };
-    
+    // editing the task
     const editTask = (index) => {
         const newTasks = [...tasks];
         const originalText = newTasks[index].text;
@@ -41,13 +41,13 @@ function App() {
         newTasks[index].text = editInput.trim() || originalText;
         setTasks(newTasks);
     };
-
+    //completion of task
     const toggleCompletion = (index) => {
         const newTasks = [...tasks];
         newTasks[index].completed = !newTasks[index].completed;
         setTasks(newTasks);
     };
-    
+    // clearing all task
     const clearAllTasks = (e) => {
         e.preventDefault();
         if (window.confirm('Are you sure you want to clear all tasks?')) {
